@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import url("common.css");
+
+html, body {width:100%; height:100%;}
+#wrapper {position:relative; padding-top:0; width:100%; height:100%; background:#000; overflow:hidden;}
+
+/* NAV */
+.navbar-inverse {background-color:rgba(0,0,0,0.5); border:0 none;}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color:rgba(0,0,0,0.5);
+}
+
+/* MAIN */
+#main {width:100%; height:100%;}
+#main>.container {position:absolute; height:100%;}
+.contents {margin:0 auto; width:100%; height:100%; -webkit-perspective:1000px; -webkit-perspective-origin:50% 50%;}
+.touchCarousel {position:relative; -webkit-transform-style:preserve-3d; -webkit-transform-origin:50% 50%; width:100%; height:100%;}
+.touchCarousel>.slide {position:absolute; width:100%; height:100%;}
+.touchCarousel>.slide>.playBtn {display:none; position:absolute; top:50%; left:50%; z-index:99999; margin:-24px 0 0 -21px; width:43px; height:48px; background:url("../images/main/play.png") no-repeat 100% 0; background-size:contain; cursor:pointer;}
+.transition {-webkit-transition:all .4s ease-out;}
+
+#prevBtn {display:block; position:absolute; top:50%; left:2%; margin-top:-33px; width:66px; height:66px; background:url("../images/main/arrow.png") no-repeat 0 0;}
+#nextBtn {display:block; position:absolute; top:50%; right:2%; margin-top:-33px; width:66px; height:66px; background:url("../images/main/arrow.png") no-repeat 100% 0;}
+
+.pager-wrapper {position:absolute; bottom:130px; left:50%; margin-left:-54px; width:auto;}
+.pager-wrapper ul {float:left; padding:0; margin:0; width:110px; height:18px; overflow:hidden; list-style:none;}
+.pager-wrapper ul li {float:left; width:22px; height:18px; background:url("../images/main/pn_off.png") no-repeat 50% 50%;}
+.pager-wrapper ul li.on {background-image:url("../images/main/pn_on.png");}
+.pager-wrapper ul.autoBtn {margin-left:20px; width:22px;}
+.pager-wrapper ul.autoBtn li {cursor:pointer;}
+.pager-wrapper ul.autoBtn li.autoPlayBtn {background-image:url("../images/main/slide_auto_play.png");}
+.pager-wrapper ul.autoBtn li.autoStopBtn {background-image:url("../images/main/slide_auto_stop.png");}
+
+.video-wrapper {display:none; position:absolute; top:0; left:0; box-sizing:border-box; padding:50px 0 70px; width:100%; height:100%; background:#000;}
+.video-wrapper .videoDiv {position:relative; display:none; width:100%; background:#000;}
+.video-wrapper .stopBtn {display:none; position:absolute; top:50%; left:50%; margin:-24px 0 0 -17px; width:35px; height:48px; background:url("../images/main/pause.png") no-repeat 100% 0; background-size:contain;}
+/* FOOTER */
+#footer {position:absolute; bottom:0; left:0; width:100%; z-index:20000; background-color:rgba(0,0,0,0.5);}
+
+@media (min-width:992px) {
+	.video-wrapper .videoDiv {height:100%;}
+	.touchCarousel>.slide>.playBtn {margin:-48px 0 0 -43px; width:86px; height:96px;}
+	.video-wrapper .stopBtn {margin:-48px 0 0 -35px; width:71px; height:96px;}
+	.pager-wrapper {bottom:100px;}
+}

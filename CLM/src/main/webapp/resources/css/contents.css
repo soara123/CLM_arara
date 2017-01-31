@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import url("common.css");
+
+/*** STORE ***/
+.store .pointer {cursor: pointer; }
+.store .storeInfo {height: 370px; width: 570px; border: 5px inset lightgray; margin: 0 auto; text-align: left; font-size: 12px; }
+.store .infoDetail {margin: 0 auto; height: 250px; width: 520px; }
+.store .infoDetail > p {margin: 5px 0; }
+.store .container h4+div.row > div {height: 40px; }
+
+/*** MOVIE ***/
+.movie .tab-content {min-height:398px;}
+.movie .row2 img{width: 200px; height: 350px; cursor: pointer; }
+.movie .row2 > div{margin-bottom: 30px; padding-left: 0px; padding-right: 0px; }
+.movie .row3 img{width: 200px; height: 350px; cursor: pointer; }
+.movie .row3 > div{margin-bottom: 30px; padding-left: 0px; padding-right: 0px; }
+.movie .btn{margin-right: 20px; }
+.movie p>img{width: 200px; height: 350px; padding: 0px; }
+.movie .plus{font-size: large; }
+.movie .plus:hover{cursor: pointer; }
+.movie .nav{margin-bottom: 20px; font-weight: bold; }
+.movie .index>h5{font-weight: bold; }
+.movie .modal-body>h4{font-weight: bold; font-size: medium; }
+.movie .fotorama2{display: none; }
+.movie .hide{display: none; }
+.movie .show{display: inline-block; }
+.movie .star_rating {font-size:0; letter-spacing:-4px;}
+.movie .star_rating a {font-size:30px; letter-spacing:0; display:inline-block; margin-left:5px; color:#ccc; text-decoration:none; }
+.movie .star_rating a:first-child {margin-left:0;}
+.movie .star_rating a.on {color:orange;}
+.movie .head ul li a{display: block; padding: 20px 20px; color: #222; font-weight: bold; font-size: medium; }
+.movie .modal {text-align: center; padding: 0!important; }
+.movie .modal:before {content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -4px; }
+.movie .modal-dialog {display: inline-block; text-align: left; vertical-align: middle; }
+.movie .row4img img{width: 120px; height: 180px; }
+.movie .row4img:hover{cursor: pointer; }
+.movie tr{height: 75px; font-size: 15px; }
+.row4{-webkit-perspective: 1000px; -webkit-perspective-origin: 50% 50%; }
+.topBtn {position: fixed; left: 90%; top: 70%; z-index:100000;}
+.timetable {position: relative; }
+
+/* MOVIE */
+.movie .row2 img{width: 200px; height: 350px; cursor: pointer; }
+.movie .row2 > div{margin-bottom: 30px; padding-left: 0px; padding-right: 0px; }
+.movie .row3 img{width: 200px; height: 350px; cursor: pointer; }
+.movie .row3 > div{margin-bottom: 30px; padding-left: 0px; padding-right: 0px; }
+.movie .btn{margin-right: 20px; }
+.movie p>img{width: 200px; height: 350px; padding: 0px; }
+.movie .plus{font-size: large; }
+.movie .plus:hover{cursor: pointer; }
+.movie .nav{margin-bottom: 20px; font-weight: bold;}
+.movie .index>h5{font-weight: bold; }
+.movie .modal-body>h4{font-weight: bold; font-size: medium; }
+.movie .fotorama{display: none; }
+.movie .hide{display: none; }
+.movie .show{display: inline-block; }
+.movie .star_rating {font-size:0; letter-spacing:-4px;}
+.movie .star_rating a {font-size:30px; letter-spacing:0; display:inline-block; margin-left:5px; color:#ccc; text-decoration:none; }
+.movie .star_rating a:first-child {margin-left:0;}
+.movie .star_rating a.on {color:orange;}
+.movie .head ul li a{display: block; padding: 20px 20px; color: #222; font-weight: bold; font-size: medium; }
+.movie .modal {text-align: center; padding: 0!important; }
+.movie .modal:before {content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -4px; }
+.movie .modal-dialog {display: inline-block; text-align: left; vertical-align: middle; }
+
+/* THEATER */
+.theater .nav{position: fixed; width: 100%; background-color:#cecece; z-index: 50; }
+.theater #myNav{list-style-type: none; padding-bottom: 0; margin: 0; }
+.theater #myNav li{float: left; padding: 20px 10px; }
+.theater body{position: relative; }
+.theater .info{border-top: 1px solid black; margin-bottom: 20px; }
+.theater .find{border-top: 1px solid black; margin-bottom: 20px; }
+.theater .map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
+.theater .map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
+.theater .map_wrap {position:relative;width:100%;height:500px;}
+.theater #menu_wrap {position:absolute;top:0;left:0;bottom:0;width:250px;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;border-radius: 10px;}
+.theater .bg_white {background:#fff;}
+.theater #menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
+.theater #menu_wrap .option{text-align: center;}
+.theater #menu_wrap .option p {margin:10px 0;}
+.theater #menu_wrap .option button {margin-left:5px;}
+.theater #placesList li {list-style: none;}
+.theater #placesList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 65px;}
+.theater #placesList .item span {display: block;margin-top:4px;}
+.theater #placesList .item h5, #placesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.theater #placesList .item .info{padding:10px 0 10px 55px;}
+.theater #placesList .info .gray {color:#8a8a8a;}
+.theater #placesList .info .jibun {padding-left:26px;background:url(http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
+.theater #placesList .info .tel {color:#009900;}
+.theater #placesList .item .markerbg {float:left;position:absolute;width:36px; height:37px;margin:10px 0 0 10px;background:url(http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;}
+.theater #placesList .item .marker_1 {background-position: 0 -10px;}
+.theater #placesList .item .marker_2 {background-position: 0 -56px;}
+.theater #placesList .item .marker_3 {background-position: 0 -102px}
+.theater #placesList .item .marker_4 {background-position: 0 -148px;}
+.theater #placesList .item .marker_5 {background-position: 0 -194px;}
+.theater #placesList .item .marker_6 {background-position: 0 -240px;}
+.theater #placesList .item .marker_7 {background-position: 0 -286px;}
+.theater #placesList .item .marker_8 {background-position: 0 -332px;}
+.theater #placesList .item .marker_9 {background-position: 0 -378px;}
+.theater #placesList .item .marker_10 {background-position: 0 -423px;}
+.theater #placesList .item .marker_11 {background-position: 0 -470px;}
+.theater #placesList .item .marker_12 {background-position: 0 -516px;}
+.theater #placesList .item .marker_13 {background-position: 0 -562px;}
+.theater #placesList .item .marker_14 {background-position: 0 -608px;}
+.theater #placesList .item .marker_15 {background-position: 0 -654px;}
+.theater #pagination {margin:10px auto;text-align: center;}
+.theater #pagination a {display:inline-block;margin-right:10px;}
+.theater #pagination .on {font-weight: bold; cursor: default;color:#777;}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="clm_comment">
+	<select id="getSequence" resultType="int">
+		select board_cafe_seq.nextval
+		from dual
+	</select>
+	
+	<insert id="insert" parameterType="commentDto"> 
+		INSERT INTO clm_comment
+		(num, writer, content, target_id, ref_group, comment_group, regdate) 
+		VALUES(clm_comment_seq.nextval, #{writer}, #{content}, #{target_id},  
+		#{ref_group}, #{comment_group}, SYSDATE)
+	</insert>
+	
+	<select id="getList" parameterType="int" resultType="commentDto"> 
+		SELECT num, writer, content, target_id, ref_group, comment_group, regdate
+		FROM clm_comment
+		WHERE ref_group=#{num}
+		ORDER BY comment_group ASC, num ASC
+	</select>
+	
+	<select id="getData" parameterType="int" resultType="commentDto">
+		select num, writer, content, target_id, ref_group
+		from clm_comment
+		where num=#{num} and ref_group=#{ref_group}
+	</select>
+	
+	<delete id="deleteComment" parameterType="int">
+		delete from clm_comment where ref_group=#{num}
+	</delete>
+</mapper>
